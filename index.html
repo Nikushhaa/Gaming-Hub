@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gaming Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Orbitron for headings, Rajdhani for body -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header id="header">
+    <div id="headerInner">
+
+      <!-- Logo -->
+      <div id="logo">
+        <span id="logoIcon"><i class="fas fa-gamepad"></i></span>
+        <span id="logoText">Gaming<span id="logoAccent">Hub</span></span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav id="nav">
+        <a href="#hero" class="navLink">Home</a>
+        <a href="#games" class="navLink">Games</a>
+        <a href="#news" class="navLink">News</a>
+        <a href="#topGames" class="navLink">Top Games</a>
+        <a href="#contact" class="navLink">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" aria-label="Toggle Menu">
+        <span class="menuBar"></span>
+        <span class="menuBar"></span>
+        <span class="menuBar"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <nav id="mobileNav">
+      <a href="#hero" class="mobileNavLink">Home</a>
+      <a href="#games" class="mobileNavLink">Games</a>
+      <a href="#news" class="mobileNavLink">News</a>
+      <a href="#topGames" class="mobileNavLink">Top Games</a>
+      <a href="#contact" class="mobileNavLink">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero">
+    <!-- Animated background grid lines -->
+    <div id="heroGrid"></div>
+
+    <div id="heroContent">
+      <p id="heroTagline"><span class="taglineDot"></span> Your Ultimate Gaming Destination</p>
+      <h1 id="heroTitle">Welcome to<br/><span id="heroTitleAccent">Gaming Hub</span></h1>
+      <p id="heroSubtitle">
+        Discover the latest games, top rankings, and breaking news from the world of gaming.
+        Level up your experience today.
+      </p>
+      <div id="heroBtns">
+        <a href="#games" id="btn1" class="btnPrimary">Explore Games <i class="fas fa-arrow-right"></i></a>
+        <a href="#topGames" id="btn2" class="btnSecondary">Top Charts <i class="fas fa-trophy"></i></a>
+      </div>
+
+      <!-- Stats bar -->
+      <div id="heroStats">
+        <div class="statItem">
+          <span class="statNum">500+</span>
+          <span class="statLabel">Games</span>
+        </div>
+        <div class="statDivider"></div>
+        <div class="statItem">
+          <span class="statNum">2M+</span>
+          <span class="statLabel">Players</span>
+        </div>
+        <div class="statDivider"></div>
+        <div class="statItem">
+          <span class="statNum">Daily</span>
+          <span class="statLabel">Updates</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating game badges -->
+    <div id="heroBadge1" class="heroBadge"><i class="fas fa-star"></i> Cyberpunk 2077</div>
+    <div id="heroBadge2" class="heroBadge"><i class="fas fa-fire"></i> Trending Now</div>
+    <div id="heroBadge3" class="heroBadge"><i class="fas fa-crown"></i> #1 Rated</div>
+  </section>
+
+  <!-- ========== GAMES SECTION ========== -->
+  <section id="games">
+    <div class="sectionInner">
+
+      <!-- Section Header -->
+      <div class="sectionHeader">
+        <p class="sectionTag"><i class="fas fa-gamepad"></i> Browse Library</p>
+        <h2 class="sectionTitle">Featured <span class="titleAccent">Games</span></h2>
+        <p class="sectionSubtitle">Handpicked titles across all genres — find your next adventure</p>
+      </div>
+
+      <!-- Search & Filter Bar -->
+      <div id="filterBar">
+        <div id="searchBox">
+          <i class="fas fa-search" id="searchIcon"></i>
+          <input type="text" id="searchInput" placeholder="Search games..." />
+        </div>
+        <div id="filterBtns">
+          <button class="filterBtn active" data-filter="all">All</button>
+          <button class="filterBtn" data-filter="action">Action</button>
+          <button class="filterBtn" data-filter="rpg">RPG</button>
+          <button class="filterBtn" data-filter="shooter">Shooter</button>
+          <button class="filterBtn" data-filter="adventure">Adventure</button>
+          <button class="filterBtn" data-filter="horror">Horror</button>
+          <button class="filterBtn" data-filter="racing">Racing</button>
+        </div>
+      </div>
+
+      <!-- Game Cards Grid -->
+      <div id="gameGrid">
+
+        <!-- Game Card 1 -->
+        <div class="gameCard" data-category="action" data-name="Cyberpunk 2077" id="gameCard1">
+          <div class="cardImg">
+            <img src="cyberpunk.jpg" alt="Cyberpunk 2077"/>
+            <span class="cardBadge">Hot</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat action">Action</span>
+              <span class="cardYear">2023</span>
+            </div>
+            <h3 class="cardTitle">Cyberpunk 2077</h3>
+            <p class="cardDesc">A sprawling open-world RPG set in a dystopian future where body modification and corporate warfare reign.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.5</span>
+              </div>
+              <span class="cardPrice">$29.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 2 -->
+        <div class="gameCard" data-category="rpg" data-name="Elden Ring" id="gameCard2">
+          <div class="cardImg">
+            <img src="elder ring..jpg" alt="Elden Ring"/>
+            <span class="cardBadge new">New</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat rpg">RPG</span>
+              <span class="cardYear">2024</span>
+            </div>
+            <h3 class="cardTitle">Elden Ring</h3>
+            <p class="cardDesc">Journey through the shattered Lands Between in this epic soulslike masterpiece from FromSoftware.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="ratingNum">5.0</span>
+              </div>
+              <span class="cardPrice">$59.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 3 -->
+        <div class="gameCard" data-category="shooter" data-name="Valorant" id="gameCard3">
+          <div class="cardImg">
+            <img src="valorant.jpg" alt="Valorant"/>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat shooter">Shooter</span>
+              <span class="cardYear">2023</span>
+            </div>
+            <h3 class="cardTitle">Valorant</h3>
+            <p class="cardDesc">Riot's tactical 5v5 shooter blends precise gunplay with unique agent abilities in high-stakes matches.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span class="ratingNum">4.2</span>
+              </div>
+              <span class="cardPrice free">Free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 4 -->
+        <div class="gameCard" data-category="adventure" data-name="Zelda Tears of the Kingdom" id="gameCard4">
+          <div class="cardImg">
+            <img src="zelda.jpg" alt="Zelda TOTK"/>
+            <span class="cardBadge award">GOTY</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat adventure">Adventure</span>
+              <span class="cardYear">2023</span>
+            </div>
+            <h3 class="cardTitle">Zelda: Tears of the Kingdom</h3>
+            <p class="cardDesc">Explore a vast sky kingdom with Link's new abilities in this groundbreaking open-world sequel.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="ratingNum">4.9</span>
+              </div>
+              <span class="cardPrice">$69.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 5 -->
+        <div class="gameCard" data-category="action" data-name="God of War Ragnarok" id="gameCard5">
+          <div class="cardImg">
+            <img src="god of war.jpg" alt="God of War Ragnarok"/>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat action">Action</span>
+              <span class="cardYear">2022</span>
+            </div>
+            <h3 class="cardTitle">God of War Ragnarök</h3>
+            <p class="cardDesc">Kratos and Atreus battle through Norse mythology in this stunning action-adventure epic.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.8</span>
+              </div>
+              <span class="cardPrice">$49.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 6 -->
+        <div class="gameCard" data-category="rpg" data-name="Baldurs Gate 3" id="gameCard6">
+          <div class="cardImg">
+            <img src="baldur's gate.png" alt="Baldurs Gate 3"/>
+            <span class="cardBadge new">New</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat rpg">RPG</span>
+              <span class="cardYear">2024</span>
+            </div>
+            <h3 class="cardTitle">Baldur's Gate 3</h3>
+            <p class="cardDesc">A richly detailed D&D RPG with deep choice-driven storytelling and breathtaking tactical combat.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="ratingNum">5.0</span>
+              </div>
+              <span class="cardPrice">$59.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 7 -->
+        <div class="gameCard" data-category="shooter" data-name="Metro Exodus" id="gameCard7">
+          <div class="cardImg">
+            <img src="metro.jpg" alt="Metro Exodus"/>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat shooter">Shooter</span>
+              <span class="cardYear">2019</span>
+            </div>
+            <h3 class="cardTitle">Metro Exodus</h3>
+            <p class="cardDesc">Artyom flees the Moscow metro and journeys across post-apocalyptic Russia in this atmospheric survival shooter.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.6</span>
+              </div>
+              <span class="cardPrice">$29.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 8 -->
+        <div class="gameCard" data-category="shooter" data-name="Team Fortress 2" id="gameCard8">
+          <div class="cardImg">
+            <img src="Team fortress 2jpg.jpg" alt="Team Fortress 2"/>
+            <span class="cardBadge" style="background:#e87d00;">Classic</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat shooter">Shooter</span>
+              <span class="cardYear">2007</span>
+            </div>
+            <h3 class="cardTitle">Team Fortress 2</h3>
+            <p class="cardDesc">Valve's iconic class-based team shooter remains wildly fun after decades, with endless hats and chaotic battles.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span class="ratingNum">4.3</span>
+              </div>
+              <span class="cardPrice free">Free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 9 -->
+        <div class="gameCard" data-category="shooter" data-name="Counter Strike 2" id="gameCard9">
+          <div class="cardImg">
+            <img src="Counter-Strike 2.jpg" alt="Counter Strike 2"/>
+            <span class="cardBadge new">New</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat shooter">Shooter</span>
+              <span class="cardYear">2023</span>
+            </div>
+            <h3 class="cardTitle">Counter-Strike 2</h3>
+            <p class="cardDesc">The legendary tactical shooter is reborn with Source 2 engine upgrades, reworked maps, and silky-smooth gameplay.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.7</span>
+              </div>
+              <span class="cardPrice free">Free</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 10 -->
+        <div class="gameCard" data-category="action" data-name="Assassins Creed Odyssey" id="gameCard10">
+          <div class="cardImg">
+            <img src="assassin's Creed Odyssey.jpg" alt="Assassins Creed Odyssey"/>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat action">Action</span>
+              <span class="cardYear">2018</span>
+            </div>
+            <h3 class="cardTitle">Assassin's Creed Odyssey</h3>
+            <p class="cardDesc">Sail across ancient Greece as a legendary Spartan mercenary in this sprawling mythological action-RPG epic.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.5</span>
+              </div>
+              <span class="cardPrice">$14.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 11 -->
+        <div class="gameCard" data-category="action" data-name="GTA 6 Grand Theft Auto VI" id="gameCard11">
+          <div class="cardImg">
+            <img src="GTA VI “grand theft auto 6”.jpg" alt="GTA 6"/>
+            <span class="cardBadge">Hot</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat action">Action</span>
+              <span class="cardYear">2026</span>
+            </div>
+            <h3 class="cardTitle">Grand Theft Auto VI</h3>
+            <p class="cardDesc">Rockstar returns to Vice City with a massive open world, dual protagonists, and next-gen chaos like never before.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="ratingNum">5.0</span>
+              </div>
+              <span class="cardPrice">$79.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 12 -->
+        <div class="gameCard" data-category="horror" data-name="Resident Evil 4 Remake" id="gameCard12">
+          <div class="cardImg">
+            <img src="resident evil 4.hpg.jpg" alt="Resident Evil 4 Remake"/>
+            <span class="cardBadge award">GOTY</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat horror">Horror</span>
+              <span class="cardYear">2023</span>
+            </div>
+            <h3 class="cardTitle">Resident Evil 4 Remake</h3>
+            <p class="cardDesc">A stunning reimagining of the survival horror classic — Leon Kennedy battles cultists and monsters in a terrifying Spanish village.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span class="ratingNum">4.9</span>
+              </div>
+              <span class="cardPrice">$39.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 13 -->
+        <div class="gameCard" data-category="horror" data-name="Resident Evil Village" id="gameCard13">
+          <div class="cardImg">
+            <img src="Resident Evil Village 8K Ultra HD.jpg" alt="Resident Evil Village"/>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat horror">Horror</span>
+              <span class="cardYear">2021</span>
+            </div>
+            <h3 class="cardTitle">Resident Evil Village</h3>
+            <p class="cardDesc">Ethan Winters faces vampires, werewolves, and Lady Dimitrescu in a nightmarish European village dripping with gothic dread.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.7</span>
+              </div>
+              <span class="cardPrice">$29.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 14 -->
+        <div class="gameCard" data-category="racing" data-name="Forza Horizon 5" id="gameCard14">
+          <div class="cardImg">
+            <img src="Forza horizon 5.jpg" alt="Forza Horizon 5"/>
+            <span class="cardBadge new">New</span>
+            <div class="cardOverlay">
+              <button class="playBtn"><i class="fas fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="cardBody">
+            <div class="cardMeta">
+              <span class="cardCat racing">Racing</span>
+              <span class="cardYear">2021</span>
+            </div>
+            <h3 class="cardTitle">Forza Horizon 5</h3>
+            <p class="cardDesc">Race across a breathtaking open-world Mexico with hundreds of cars, stunning weather, and limitless customisation.</p>
+            <div class="cardFooter">
+              <div class="cardRating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                <span class="ratingNum">4.8</span>
+              </div>
+              <span class="cardPrice">$49.99</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end gameGrid -->
+
+      <!-- No results message -->
+      <p id="noResults">No games found. Try a different search or filter.</p>
+
+    </div>
+  </section>
+
+  <!-- ========== TOP GAMES SECTION ========== -->
+  <section id="topGames">
+    <div class="sectionInner">
+      <div class="sectionHeader">
+        <p class="sectionTag"><i class="fas fa-trophy"></i> Hall of Fame</p>
+        <h2 class="sectionTitle">Top <span class="titleAccent">Ranked</span> Games</h2>
+        <p class="sectionSubtitle">The highest-rated games of the year, voted by millions of players</p>
+      </div>
+
+      <div id="topList">
+
+        <!-- Top Item 1 -->
+        <div class="topItem" id="topItem1">
+          <div class="topRank rank1"><span>#1</span></div>
+          <img class="topImg" src="elder ring..jpg" alt="Elden Ring"/>
+          <div class="topInfo">
+            <h3 class="topTitle">Elden Ring</h3>
+            <p class="topGenre">RPG · FromSoftware</p>
+          </div>
+          <div class="topScore">
+            <span class="scoreNum">9.8</span>
+            <span class="scoreLabel">Score</span>
+          </div>
+          <div class="topBar">
+            <div class="topBarFill" style="width: 98%"></div>
+          </div>
+        </div>
+
+        <!-- Top Item 2 -->
+        <div class="topItem" id="topItem2">
+          <div class="topRank rank2"><span>#2</span></div>
+          <img class="topImg" src="baldur's gate.png" alt="BG3"/>
+          <div class="topInfo">
+            <h3 class="topTitle">Baldur's Gate 3</h3>
+            <p class="topGenre">RPG · Larian Studios</p>
+          </div>
+          <div class="topScore">
+            <span class="scoreNum">9.6</span>
+            <span class="scoreLabel">Score</span>
+          </div>
+          <div class="topBar">
+            <div class="topBarFill" style="width: 96%"></div>
+          </div>
+        </div>
+
+        <!-- Top Item 3 -->
+        <div class="topItem" id="topItem3">
+          <div class="topRank rank3"><span>#3</span></div>
+          <img class="topImg" src="zelda.jpg" alt="Zelda"/>
+          <div class="topInfo">
+            <h3 class="topTitle">Zelda: Tears of the Kingdom</h3>
+            <p class="topGenre">Adventure · Nintendo</p>
+          </div>
+          <div class="topScore">
+            <span class="scoreNum">9.4</span>
+            <span class="scoreLabel">Score</span>
+          </div>
+          <div class="topBar">
+            <div class="topBarFill" style="width: 94%"></div>
+          </div>
+        </div>
+
+        <!-- Top Item 4 -->
+        <div class="topItem" id="topItem4">
+          <div class="topRank rank4"><span>#4</span></div>
+          <img class="topImg" src="god of war.jpg" alt="GoW"/>
+          <div class="topInfo">
+            <h3 class="topTitle">God of War Ragnarök</h3>
+            <p class="topGenre">Action · Santa Monica Studio</p>
+          </div>
+          <div class="topScore">
+            <span class="scoreNum">9.3</span>
+            <span class="scoreLabel">Score</span>
+          </div>
+          <div class="topBar">
+            <div class="topBarFill" style="width: 93%"></div>
+          </div>
+        </div>
+
+        <!-- Top Item 5 -->
+        <div class="topItem" id="topItem5">
+          <div class="topRank rank4"><span>#5</span></div>
+          <img class="topImg" src="cyberpunk2.jpg" alt="Cyberpunk"/>
+          <div class="topInfo">
+            <h3 class="topTitle">Cyberpunk 2077</h3>
+            <p class="topGenre">Action · CD Projekt Red</p>
+          </div>
+          <div class="topScore">
+            <span class="scoreNum">9.0</span>
+            <span class="scoreLabel">Score</span>
+          </div>
+          <div class="topBar">
+            <div class="topBarFill" style="width: 90%"></div>
+          </div>
+        </div>
+
+      </div><!-- end topList -->
+    </div>
+  </section>
+
+  <!-- ========== NEWS SECTION ========== -->
+  <section id="news">
+    <div class="sectionInner">
+      <div class="sectionHeader">
+        <p class="sectionTag"><i class="fas fa-newspaper"></i> Latest Updates</p>
+        <h2 class="sectionTitle">Gaming <span class="titleAccent">News</span></h2>
+        <p class="sectionSubtitle">Stay current with the hottest stories in gaming</p>
+      </div>
+
+      <div id="newsGrid">
+
+        <!-- News Card 1 -->
+        <article class="newsCard" id="newsCard1">
+          <div class="newsImg">
+            <img src="rtx5090ti.jpg" alt="News 1"/>
+            <span class="newsCat">Industry</span>
+          </div>
+          <div class="newsBody">
+            <div class="newsMeta">
+              <span class="newsDate"><i class="fas fa-calendar-alt"></i> May 1, 2026</span>
+              <span class="newsRead"><i class="fas fa-clock"></i> 4 min read</span>
+            </div>
+            <h3 class="newsTitle">Next-Gen Graphics: How RTX 5090 is Changing PC Gaming Forever</h3>
+            <p class="newsExcerpt">NVIDIA's latest flagship GPU is pushing boundaries that were unimaginable just two years ago, bringing cinematic realism to even indie titles.</p>
+            <a href="#" class="newsLink">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- News Card 2 -->
+        <article class="newsCard" id="newsCard2">
+          <div class="newsImg">
+            <img src="team-liquid-valorant.jpg" alt="News 2"/>
+            <span class="newsCat">eSports</span>
+          </div>
+          <div class="newsBody">
+            <div class="newsMeta">
+              <span class="newsDate"><i class="fas fa-calendar-alt"></i> April 28, 2026</span>
+              <span class="newsRead"><i class="fas fa-clock"></i> 6 min read</span>
+            </div>
+            <h3 class="newsTitle">World Championship: Team Liquid Claims the Valorant Crown in Historic Match</h3>
+            <p class="newsExcerpt">In a thrilling 5-game series watched by over 40 million viewers, Team Liquid secured victory in one of esports' most dramatic finales.</p>
+            <a href="#" class="newsLink">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- News Card 3 -->
+        <article class="newsCard" id="newsCard3">
+          <div class="newsImg">
+            <img src="GTA VI “grand theft auto 6”.jpg" alt="News 3"/>
+            <span class="newsCat">Release</span>
+          </div>
+          <div class="newsBody">
+            <div class="newsMeta">
+              <span class="newsDate"><i class="fas fa-calendar-alt"></i> April 22, 2026</span>
+              <span class="newsRead"><i class="fas fa-clock"></i> 3 min read</span>
+            </div>
+            <h3 class="newsTitle">GTA VI Official Release Date Confirmed — What We Know So Far</h3>
+            <p class="newsExcerpt">Rockstar Games finally revealed the launch window for the most anticipated game in history, along with jaw-dropping new gameplay footage.</p>
+            <a href="#" class="newsLink">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+      </div><!-- end newsGrid -->
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact">
+    <div class="sectionInner">
+      <div class="sectionHeader">
+        <p class="sectionTag"><i class="fas fa-envelope"></i> Get In Touch</p>
+        <h2 class="sectionTitle">Contact <span class="titleAccent">Us</span></h2>
+        <p class="sectionSubtitle">Questions, feedback, or partnership requests — we'd love to hear from you</p>
+      </div>
+
+      <div id="contactWrap">
+
+        <!-- Contact Info -->
+        <div id="contactInfo">
+          <div class="infoItem">
+            <div class="infoIcon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="infoText">
+              <h4>Location</h4>
+              <p>Batumi,Georgia</p>
+            </div>
+          </div>
+          <div class="infoItem">
+            <div class="infoIcon"><i class="fas fa-envelope"></i></div>
+            <div class="infoText">
+              <h4>Email</h4>
+              <p>mbrbs72@gmail.com</p>
+            </div>
+          </div>
+          <div class="infoItem">
+            <div class="infoIcon"><i class="fas fa-headset"></i></div>
+            <div class="infoText">
+              <h4>Support</h4>
+              <p>24/7 Live Chat Available</p>
+            </div>
+          </div>
+          <div id="contactSocials">
+            <a href="#" class="socialLink" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="socialLink" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" class="socialLink" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="socialLink" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div id="contactForm">
+          <div id="formSuccess" class="hidden">
+            <i class="fas fa-check-circle"></i>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+          </div>
+
+          <form id="form1" novalidate>
+            <div class="formRow">
+              <div class="formGroup" id="formGroup1">
+                <label for="inputName" class="formLabel">Your Name</label>
+                <input type="text" id="inputName" class="formInput" placeholder="John Doe"/>
+                <span class="formError" id="nameError">Please enter your name.</span>
+              </div>
+              <div class="formGroup" id="formGroup2">
+                <label for="inputEmail" class="formLabel">Email Address</label>
+                <input type="email" id="inputEmail" class="formInput" placeholder="john@example.com"/>
+                <span class="formError" id="emailError">Please enter a valid email.</span>
+              </div>
+            </div>
+            <div class="formGroup" id="formGroup3">
+              <label for="inputSubject" class="formLabel">Subject</label>
+              <input type="text" id="inputSubject" class="formInput" placeholder="What's this about?"/>
+              <span class="formError" id="subjectError">Please enter a subject.</span>
+            </div>
+            <div class="formGroup" id="formGroup4">
+              <label for="inputMessage" class="formLabel">Message</label>
+              <textarea id="inputMessage" class="formInput formTextarea" placeholder="Tell us more..."></textarea>
+              <span class="formError" id="messageError">Please enter your message.</span>
+            </div>
+            <button type="submit" id="btn3" class="btnPrimary submitBtn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div><!-- end contactWrap -->
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div id="footerInner">
+
+      <div id="footerBrand">
+        <div id="footerLogo">
+          <i class="fas fa-gamepad"></i> Gaming<span>Hub</span>
+        </div>
+        <p id="footerTagline">Your ultimate destination for gaming news, reviews, and community.</p>
+        <div id="footerSocials">
+          <a href="#" class="footerSocial" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="footerSocial" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" class="footerSocial" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="footerSocial" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+          <a href="https://www.instagram.com/nikushanakashidzee/" class="footerSocial" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footerCol">
+        <h4 class="footerHeading">Quick Links</h4>
+        <ul class="footerList">
+          <li><a href="#hero" class="footerLink">Home</a></li>
+          <li><a href="#games" class="footerLink">Games</a></li>
+          <li><a href="#topGames" class="footerLink">Top Games</a></li>
+          <li><a href="#news" class="footerLink">News</a></li>
+          <li><a href="#contact" class="footerLink">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footerCol">
+        <h4 class="footerHeading">Categories</h4>
+        <ul class="footerList">
+          <li><a href="#" class="footerLink">Action Games</a></li>
+          <li><a href="#" class="footerLink">RPG</a></li>
+          <li><a href="#" class="footerLink">Shooter</a></li>
+          <li><a href="#" class="footerLink">Adventure</a></li>
+          <li><a href="#" class="footerLink">Strategy</a></li>
+        </ul>
+      </div>
+
+      <div class="footerCol">
+        <h4 class="footerHeading">Support</h4>
+        <ul class="footerList">
+          <li><a href="#" class="footerLink">Help Center</a></li>
+          <li><a href="#" class="footerLink">Privacy Policy</a></li>
+          <li><a href="#" class="footerLink">Terms of Service</a></li>
+          <li><a href="#" class="footerLink">Cookie Policy</a></li>
+          <li><a href="#" class="footerLink">Advertise</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="footerBottom">
+      <p>© 2026 GamingHub. All rights reserved. Designed with <i class="fas fa-heart"></i> for gamers.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
