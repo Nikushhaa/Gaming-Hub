@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //  is currently in view as you scroll
 // ================================================
 
-const sections  = document.querySelectorAll('section[id]');
+const  sections  = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.navLink');
 
 const sectionObserver = new IntersectionObserver(function (entries) {
